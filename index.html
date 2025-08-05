@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-image: url('porpol.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #D0BDE0;
+      color: white;
+      padding: 20px;
+      border-radius: 6px;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    section {
+      background: lavender;
+      padding: 15px 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #007acc;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #B97DEA;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #005f99;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Jhanine Faith Samatra</h1>
+    <p>"Aspiring Web Developer"</p>
+  </div>
+
+  <div class="header-right">
+    <img src="meh.jpg" alt="Profile Picture" class="profile-pic">
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>About Me</h2>
+    <p>I'm interested in reading, and I'm trying to learn playing some instruments like guitar. My number one goal in life is to finish my study so that I can help my parents someday.</p>
+  </section>
+
+  <section> 
+    <h2>Education</h2>
+    <ul>
+      <li>School: Dominican College of Tarlac</li>
+      <li>Course: Bachelor of Science in Information Technology (BSIT)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+<ul>
+   <li>Basic HTML & CSS</li>
+   <li>Familiar with MS Office (Word, PowerPoint, Excel)</li>
+</ul>
+  </section>
+
+  <section>
+    <h2>Projects or Experience</h2>
+    <p>Nothing pa po</p>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <p>Email: jhaninefaiths@gmail.com</p>
+    <p>Message me anytime!</p>
+  </section>
+
+  <section>
+    <h2>Leave a Comment</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="comment">Comment:</label><br>
+      <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <a href="resume.pdf" download>
+      <button>Download Resume</button>
+    </a>
+  </section>
+</main>
+
+</body>
+</html>
